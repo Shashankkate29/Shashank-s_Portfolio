@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shashank's-Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Shashank's Portfolio</a>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 id="heroName">Hi, I'm Shashank Kate</h1>
+          <p id="heroBio">I'm a full-stack developer who loves creating clean, scalable web apps.</p>
+          <div class="hero-ctas">
+            <a href="#projects" class="button">See Projects</a>
+           <a href="#contact" class="button">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img id="heroPhoto" src="skate.jpg" alt="Your Photo">
+        </div>
+      </div>                                                            
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <p id="aboutText">
+            I'm Shashank Kate, a Computer Engineering student who loves creating web projects. 
+            I enjoy designing clean and user-friendly frontends, building simple yet effective backend APIs, 
+            and I'm also exploring the field of cybersecurity to strengthen my skills.
+        </p>
+        <div class="skills-grid">
+          <div>
+            <h3>Skills</h3>
+            <ul id="skillsList">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React (learning)</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          <!-- RESUME -->
+    <section id="resume" class="section resume">
+          <div class="container">
+          <h2>Resume</h2>
+            <p>You can view or download my resume here:</p>
+          <div class="resume-actions">
+            <a href="Shashank_Santosh_Kate_Resume.docx" class="button" target="_blank">📄 View Resume</a>
+            <a href="Shashank_Santosh_Kate_Resume.docx" class="button" download>⬇️ Download Resume</a>
+          </div>
+          </div>
+    </section>
+          <div>
+            <h3>Experience / Education</h3>
+            <ul id="expList">
+                <li>B.Tech — Computer Engineering, DBATU University (2022 - Present)</li>
+                <li>Mini Project — Inventory Management System (2024)</li>
+                <li>Workshop — Cybersecurity Basics (2025)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <!-- <p class="muted">Click a card to open the demo or repository.</p> -->
+
+        <div id="projectsGrid" class="projects-grid">
+          <!-- Project cards are injected by scripts.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Send me an email or use the contact form below.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p><strong>Email:</strong> <a id="emailLink" href="mailto:shashankkate@gmail.com.com">shashankkate@gmail.com</a></p>
+            <p><strong>Portfolio:</strong> <a id="portfolioLink" href="#">https://your-site.example</a></p>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <button type="submit" class="btn">Send</button>
+              <div id="formMsg" class="muted small"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="footerYear"></span> Shashank Kate — All Rights Reserved.</small>
+    </div>
+        <a href="#" target="_blank" class="social insta"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank" class="social linkedin"><i class="fab fa-linkedin"></i></a>
+    <a href="#" target="_blank" class="social github"><i class="fab fa-github"></i></a>
+    <a href="#" target="_blank" class="social telegram"><i class="fab fa-telegram"></i></a>
+  </footer>
+
+  <script src="Js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("fh6tcv7Zx8wDA5hT2");
+  })();
+</script>
+
+</body>
+</html>
