@@ -11,8 +11,10 @@ const SITE = {
   skills: ["C, C++", "HTML", "CSS", "JavaScript", "Node.js", "Git", "MySQL"],
 
   experience: [
-    "Student — JSPM's Bhivarabai Institute of Technology (2022 - Present)"
-  ],
+    "Student — JSPM's Bhivarabai Institute of Technology (2022 - Present)",
+     "Mini Project — Inventory Management System (2024)",
+     "Online Food Ordering Website(E-commerce) (2025)",
+     ],
 
   projects: [
     {
@@ -165,4 +167,5 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer) {
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
+
 
